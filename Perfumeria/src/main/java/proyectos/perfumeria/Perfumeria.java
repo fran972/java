@@ -21,7 +21,7 @@ public class Perfumeria {
         System.out.println("5.salir");
         opcion=scanner.nextInt();
         switch(opcion){
-            case 1:
+            cas
                 break;
             case 2:
                 break;
