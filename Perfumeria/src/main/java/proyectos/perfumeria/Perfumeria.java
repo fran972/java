@@ -22,7 +22,7 @@ public class Perfumeria {
         opcion=scanner.nextInt();
         switch(opcion){
             case 1:
-                break;
+                break
             case 2:
                 break;
             case 3:
