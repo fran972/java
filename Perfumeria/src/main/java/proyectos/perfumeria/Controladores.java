@@ -1,11 +1,14 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package proyectos.perfumeria;
 
 /**
  *
- * @author julio
+ * @author MSI
  */
 public class Controladores {
-  
     public boolean verificarCaractres (String identificador){
         return identificador.matches("\\d{1,10}"); //si el texto cumple la condicion larga true, si no la cumple larga false 
     }
@@ -23,17 +26,6 @@ public class Controladores {
         }
         
         
-        return id; 
+     return id; 
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
