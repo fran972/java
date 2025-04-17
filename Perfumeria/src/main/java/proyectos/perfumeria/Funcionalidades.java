@@ -32,8 +32,49 @@ public class Funcionalidades {
             System.out.println("El identificador ingresado no cumple con lo pedido, porfavor vuelva a intentarlo");
             this.identificador=entrada.nextLine();
             this.identificador = verificador.verificarIdRepetidos(articulo,this.identificador); // lo pongo dentro del while para que no permita que se creen id repetidos 
-        } 
+        }
         
+        articulo[i].setIdentificador(this.identificador);
+        
+        System.out.println("Ingrese el nombre del articulo");
+        this.nombre=entrada.nextLine();
+        
+        while (verificador.verificarCaractresNombre(this.nombre) != true){
+            System.out.println("El Nombre ingresado no cumple con lo pedido, porfavor vuelva a intentarlo");
+            this.nombre=entrada.nextLine();
+        }
+        
+        articulo[i].setNombre(this.nombre);
+        
+        System.out.println("Ingrese la marca del articulo");
+        this.marca=entrada.nextLine();
+        
+        while (verificador.verificarCaractresMarca(this.marca) != true){
+            System.out.println("El Nombre ingresado no cumple con lo pedido, porfavor vuelva a intentarlo");
+            this.marca=entrada.nextLine();
+        }
+        
+        articulo[i].setMarca(this.marca);
+        
+        System.out.println("Ingrese el precio del articulo");
+        this.precio=entrada.nextDouble();
+        
+        while(this.precio<=0){
+            System.out.println("ingrese un precio valido");
+            this.precio=entrada.nextDouble();
+        }
+        
+        articulo[i].setPrecio(this.precio);
+        
+        System.out.println("Ingrese el stock del producto");
+        this.stock=entrada.nextInt();
+        
+        while(this.stock<0){
+            System.out.println("Ingrese un stock valido");
+            this.stock=entrada.nextInt();
+        }
+        
+        articulo[i].setStock(this.stock);
         
     }
     

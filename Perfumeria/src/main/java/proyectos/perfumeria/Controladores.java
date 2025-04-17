@@ -28,7 +28,7 @@ public class Controladores {
    
         for(Articulos a : articulos){
             
-            while( a.getIdentificador() == id ){
+            while( id.equals(a.getIdentificador())){
                 System.out.println("El id que ha ingresado ya existe, porfavor ingrese otro\n");
                 id = entrada.nextLine();
                 verificarIdRepetidos(articulos,id); 
